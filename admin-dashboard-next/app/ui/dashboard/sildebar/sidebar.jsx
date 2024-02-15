@@ -17,7 +17,7 @@ export default function Sidebar() {
       <ul>
         {
           menuItems.map( category => (
-            <li key={category.title}>
+            <li key={category.title} className={styles.list}>
               <span className={styles.category}>{category.title}</span>
               {
                 category.list.map( item => (

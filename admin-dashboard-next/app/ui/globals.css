@@ -17,3 +17,12 @@ body {
     background-color : var(--bg);
     color : var(--text);
 }
+
+a {
+    text-decoration : none;
+    color : var(--textSoft)
+}
+
+a:where(:hover , :focus , :active) {
+    color: var(--text);
+}
