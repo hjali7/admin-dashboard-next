@@ -1,0 +1,50 @@
+.container {
+    display : flex ;
+    align-items : center ;
+    background-color : var(--bgSoft);
+    padding: 20px;
+    border-radius:8px;
+}
+
+.title{
+    flex : 2 ;
+    color : var(--textSoft);
+    font-weight : semi-bold;
+    text-transform: capitalize;
+}
+
+.menu {
+    flex : 1 ;
+    display : flex ;
+    align-items : center;
+    justify-content : space-between;
+}
+
+.searchbar {
+    background-color : var(--bg);
+    padding : 10px ;
+    display : flex;
+    align-items : center;
+    border-radius: 10px;
+    gap : 10px;
+}
+
+.searchbar input {
+    background-color : transparent;
+    border: none;
+    outline: none;
+    color : white;
+}
+
+.searchbar:where(:focus , :hover , :focus-visible) {
+    background-color: var(--bgSoft);
+}
+
+.icons {
+    display : flex;
+    align-items:center;
+    /* justify-content : space-around; */
+    gap : 10px;
+    cursor: pointer;
+    
+}
