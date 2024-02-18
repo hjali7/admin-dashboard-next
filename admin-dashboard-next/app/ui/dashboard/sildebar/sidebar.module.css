@@ -40,4 +40,24 @@
     margin: 10px 0;
 }
 
+.logOut {
+    background: none;
+    border:none;
+    cursor: pointer;
+    color : var(--textSoft);
+    display: flex;
+    align-items : center;
+    gap : 10px;
+    border-radius:10px;
+    margin: 5px 0px;
+    padding : 20px;
+    width : 100%;
+    color:white;
+}
+
+.logOut:where(:hover , :focus , :focus-visible) {
+    background-color: var(--bg);
+}
+
+
 

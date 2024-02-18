@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from './sidebar.module.css';
 import menuItems  from './data';
 import MenuLink from './menuLink/menuLink';
+import { MdLogout } from 'react-icons/md';
 
 export default function Sidebar() {
   return (
@@ -28,6 +29,10 @@ export default function Sidebar() {
           ))
         }
       </ul>
+      <button type="button" className={styles.logOut}>
+        <MdLogout />
+        log out
+      </button>
     </div>
   );
 };
