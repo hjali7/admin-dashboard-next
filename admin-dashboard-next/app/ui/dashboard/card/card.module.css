@@ -1,0 +1,38 @@
+.container {
+    display:flex;
+    gap:20px;
+    padding:20px;
+    background-color:var(--bgSoft);
+    border-radius:10px;
+    cursor: pointer;
+    width:100%;
+}
+
+.container:hover {
+    background-color: var(--bgHover);
+}
+
+.content{
+    display: flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.number {
+    font-size:24px;
+    font-weight:500;
+}
+
+.details {
+    display : flex ;
+    gap:5px;
+}
+
+.positive {
+    color:lime;
+}
+
+.negetive {
+    color:red;
+}
+
