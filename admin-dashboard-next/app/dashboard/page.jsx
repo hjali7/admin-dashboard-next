@@ -15,8 +15,8 @@ export default function Dashboard() {
         <Chart />
       </div>
       <div className={styles.rSide}>
-        <RightBar  title={'Available Now'} icon={"🔥"} txt={"How to use the new version of the admin dashboard?"} para={"Takes 4 minutes to learns"} iconBtn={<MdPlayCircleFilled />} btnTxt={"watch"}/>
-        <RightBar  title={'Coming Soon'} icon={"🚀"} txt={"New server actions are available,partial pre-rendering is coming up!"} para={"Boost your productivity"} iconBtn={<MdReadMore />} btnTxt={"learn"}/>
+        <RightBar  title={'Available Now'} icon={"🔥"} txt={"How to use the new version of the admin dashboard?"} para={"Takes 4 minutes to learns"} iconBtn={<MdPlayCircleFilled size={16}/>} btnTxt={"watch"} />
+        <RightBar  title={'Coming Soon'} icon={"🚀"} txt={"New server actions are available,partial pre-rendering is coming up!"} para={"Boost your productivity"} iconBtn={<MdReadMore size={18} />} btnTxt={"learn"} />
       </div>
     </div>
   );
