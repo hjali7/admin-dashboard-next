@@ -1,0 +1,46 @@
+.container {
+    background-color:var(--bgSoft);
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.button {
+    outline:none;
+    border:none;
+    border-radius:10px;
+    background-color: transparent;
+    padding:5px;
+}
+
+.top {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:10px;
+}
+
+.topBtn {
+    color:#fff;
+    border-radius:10px;
+    background-color:blueviolet;
+    padding:15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.table {
+    padding:10px;
+    width:100%;    
+}
+
+.table thead {
+    text-transform: capitalize;
+    color: var(--textSoft);
+
+}
+
+.table thead td:where(:hover , :focus , :focus-visible) {
+    color:lightslategray;
+}
+
