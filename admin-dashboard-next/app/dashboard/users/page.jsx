@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import styles from '@/ui/dashboard/users/users.module.css';
 import Search from '@/ui/search/search';
+import Pagination from '@/ui/dashboard/pagination/pagination';
 
 export default function Users () {
     return (
@@ -37,56 +38,57 @@ export default function Users () {
                         <td>Admin</td>
                         <td>active</td>
                         <td>
-                            <Link href="/">
+                            <div className={styles.buttons}>
+                                <Link href="/">
                                 <button type="button" className={`${styles.button} ${styles.view}`}>View</button>
-                            </Link>
-                            <Link href="/">
+                                </Link>
                                 <button type="button" className={`${styles.button} ${styles.delete}`}>Delete</button>
-                            </Link>
+                            </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <div className={styles.user}>
                                 <Image src="/assets/noavatar.png" alt='avatar' width={40} height={40}/>
-                                John Deo
+                                sara jons
                             </div>
                         </td>
-                        <td>john@gmail.com</td>
+                        <td>sara@gmail.com</td>
                         <td>13.01.2020</td>
-                        <td>Admin</td>
+                        <td>writer</td>
                         <td>active</td>
                         <td>
-                            <Link href="/">
+                            <div className={styles.buttons}>
+                                <Link href="/">
                                 <button type="button" className={`${styles.button} ${styles.view}`}>View</button>
-                            </Link>
-                            <Link href="/">
+                                </Link>
                                 <button type="button" className={`${styles.button} ${styles.delete}`}>Delete</button>
-                            </Link>
+                            </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <div className={styles.user}>
                                 <Image src="/assets/noavatar.png" alt='avatar' width={40} height={40}/>
-                                John Deo
+                                milck jakob
                             </div>
                         </td>
-                        <td>john@gmail.com</td>
+                        <td>jakob@gmail.com</td>
                         <td>13.01.2020</td>
-                        <td>Admin</td>
+                        <td>Editor</td>
                         <td>active</td>
                         <td>
-                            <Link href="/">
+                            <div className={styles.buttons}>
+                                <Link href="/">
                                 <button type="button" className={`${styles.button} ${styles.view}`}>View</button>
-                            </Link>
-                            <Link href="/">
+                                </Link>
                                 <button type="button" className={`${styles.button} ${styles.delete}`}>Delete</button>
-                            </Link>
+                            </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
+            <Pagination />
         </div>
     );
 };

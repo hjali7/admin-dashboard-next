@@ -4,19 +4,26 @@
     border-radius: 10px;
 }
 
+.buttons {
+    display:flex;
+    gap:10px;
+}
+
 .button {
     outline:none;
     border:none;
-    border-radius:10px;
+    border-radius:5px;
     background-color: transparent;
-    padding:5px;
+    color:var(--textSoft);
+    padding:5px 10px;
+    cursor: pointer;
 }
 
 .top {
     display: flex;
     align-items:center;
     justify-content: space-between;
-    padding:10px;
+    padding:15px;
 }
 
 .topBtn {
@@ -30,17 +37,40 @@
 }
 
 .table {
-    padding:10px;
-    width:100%;    
+    width:100%;
+}
+
+.table td {
+    padding: 15px;
 }
 
 .table thead {
     text-transform: capitalize;
     color: var(--textSoft);
-
 }
 
 .table thead td:where(:hover , :focus , :focus-visible) {
     color:lightslategray;
 }
 
+.table tbody tr:where(:hover , :focus , :focus-visible) {
+    background-color:lightslategrey
+}
+
+.user {
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+.user img {
+    border-radius: 20px;
+}
+
+.view {
+    background-color: teal;
+}
+
+.delete {
+    background-color:crimson;
+}

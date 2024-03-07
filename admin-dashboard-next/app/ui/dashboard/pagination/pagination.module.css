@@ -1,0 +1,21 @@
+.container {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:15px;
+}
+
+.container button {
+    background-color: lightgray;
+    color:#000;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding:5px 10px;
+    cursor: pointer;
+}
+
+.container button:disabled {
+    cursor: not-allowed;
+}
