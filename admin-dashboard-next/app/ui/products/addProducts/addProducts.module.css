@@ -1,0 +1,50 @@
+.container {
+    background-color:var(--bgSoft);
+    border-radius: 10px;
+    padding:15px;
+    margin-top:20px;
+}
+
+.container input , .container textarea , .container select {
+    background-color:var(--bg);
+    border: none;
+    outline:none;
+    padding:20px 10px;
+    border-radius: 5px;
+    color:lightslategray;
+}
+
+.forms {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.topForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    width:100%;
+}
+
+.rtForm {
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    /* width:100%; */
+    gap:8px;
+    
+}
+
+.ltForm {
+    flex:1 ;
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.rtForm input {
+    width:100%;
+
+}
