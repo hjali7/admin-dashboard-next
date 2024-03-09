@@ -18,6 +18,7 @@
     display:flex;
     flex-direction: column;
     align-items: flex-start;
+    gap:20px;
 }
 
 .topForm {
@@ -48,3 +49,39 @@
     width:100%;
 
 }
+
+.lenghtForm {
+    display:flex;
+    align-items:center;
+}
+
+.lenghtForm input {
+    width:100%;
+    border-top-right-radius: 0 ;
+    border-bottom-right-radius: 0 ;
+}
+
+.lenghtForm select {
+    border-radius: 0;
+}
+
+.bottomForm  {
+    width: 100%;
+}
+
+.bottomForm textarea {
+    width:100%;
+    min-height: 300px;
+}
+
+.forms button {
+    padding:20px;
+    border-radius:5px;
+    color:var(--textSoft);
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+    cursor: pointer;
+    width: 100%;
+}
+
