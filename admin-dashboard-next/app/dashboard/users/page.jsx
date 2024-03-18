@@ -39,7 +39,7 @@ export default function Users () {
                         <td>active</td>
                         <td>
                             <div className={styles.buttons}>
-                                <Link href="/">
+                                <Link href="/dashboard/users/test">
                                 <button type="button" className={`${styles.button} ${styles.view}`}>View</button>
                                 </Link>
                                 <button type="button" className={`${styles.button} ${styles.delete}`}>Delete</button>
@@ -59,7 +59,7 @@ export default function Users () {
                         <td>active</td>
                         <td>
                             <div className={styles.buttons}>
-                                <Link href="/">
+                                <Link href="/dashboard/users/test">
                                 <button type="button" className={`${styles.button} ${styles.view}`}>View</button>
                                 </Link>
                                 <button type="button" className={`${styles.button} ${styles.delete}`}>Delete</button>
@@ -79,7 +79,7 @@ export default function Users () {
                         <td>active</td>
                         <td>
                             <div className={styles.buttons}>
-                                <Link href="/">
+                                <Link href='/dashboard/users/test'>
                                 <button type="button" className={`${styles.button} ${styles.view}`}>View</button>
                                 </Link>
                                 <button type="button" className={`${styles.button} ${styles.delete}`}>Delete</button>
