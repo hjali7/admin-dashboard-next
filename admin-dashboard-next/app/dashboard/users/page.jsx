@@ -4,8 +4,12 @@ import Image from 'next/image';
 import styles from '@/ui/dashboard/users/users.module.css';
 import Search from '@/ui/search/search';
 import Pagination from '@/ui/dashboard/pagination/pagination';
+import { fetchUsers } from '@/lib/resData';
 
-export default function Users () {
+const UsersPage = async () => {
+
+    const data = await fetchUsers();
+    console.log(data);
     return (
         <div className={styles.container}>
             <div className={styles.top}>
@@ -92,3 +96,5 @@ export default function Users () {
         </div>
     );
 };
+
+export default UsersPage;
